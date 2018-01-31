@@ -89,70 +89,37 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>这是<strong>新的开始</strong>，我用hexo创建了第一篇文章。</p>
-<p>通过下面的命令，可以创建一篇新的文章。</p>
+<blockquote>
+<p>当然是需要在电脑上安装好hexo的环境，包括：</p>
+<ol>
+<li>安装git</li>
+<li>node.js</li>
+<li>hexo</li>
+</ol>
+<p>这些随笔在网上找找就完成了。</p>
+</blockquote>
+<p>然后在你需要的目录下，使用git bash窗口。通过下面的命令，可以创建一篇新的文章。</p>
 <pre><code>在git bash中
 hexo new 新的开始
 </code></pre><p>然后启动hexo本地服务器。</p>
 <pre><code>hexo server
 </code></pre><p>通过浏览器打开， <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>, 就会出现我们新写的文章。</p>
-<pre><code>hexo deploy 发布到github中会报错
-ERROR Deployer not found: git
-需要使用下面这条指令
-npm install --save hexo-deployer-git
-</code></pre>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://hechao17.github.io/2018/01/31/新的开始/" data-id="cjd2rzl2n0001foqxp6vdx0hg" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开始/">开始</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/我/">我</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日记/">日记</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/01/31/hello-world/" class="article-date">
-  <time datetime="2018-01-31T04:48:40.721Z" itemprop="datePublished">2018-01-31</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/31/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<h2 id="然后是部署到git-hub"><a href="#然后是部署到git-hub" class="headerlink" title="然后是部署到git hub"></a>然后是部署到git hub</h2><p>部署完成后，我们就可以通过网站来访问你的博客了，其中username是你的github的用户名 </p>
+<pre><code>https://username.github.io/
+</code></pre><p>我们需要在 <code>github</code> 中先创建一个仓库，命名叫做 <code>username.github.io</code> 否则后续操作会比较省心！！</p>
+<p>部署的时候，我们在git bash中使用指令</p>
+<pre><code>git g    #generate 就是生成所需要的网站
+git d    #deploy 上传到github的服务器中
+</code></pre><p>完成后就可以通过 网页访问你的博客啦~~~~</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://hechao17.github.io/2018/01/31/hello-world/" data-id="cjd2rzl2e0000foqxjn368eve" class="article-share-link">Share</a>
+      <a data-url="http://hechao17.github.io/2018/01/31/新的开始/" data-id="cjd2sr3jo00003oqx4arzl7y8" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+
     </footer>
   </div>
   
@@ -180,7 +147,7 @@ npm install --save hexo-deployer-git
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/开始/">开始</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/我/">我</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日记/">日记</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
     </div>
   </div>
 
@@ -190,7 +157,7 @@ npm install --save hexo-deployer-git
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/开始/" style="font-size: 10px;">开始</a> <a href="/tags/我/" style="font-size: 10px;">我</a> <a href="/tags/日记/" style="font-size: 10px;">日记</a>
+      <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
     </div>
   </div>
 
@@ -213,10 +180,6 @@ npm install --save hexo-deployer-git
         
           <li>
             <a href="/2018/01/31/新的开始/">新的开始</a>
-          </li>
-        
-          <li>
-            <a href="/2018/01/31/hello-world/">Hello World</a>
           </li>
         
       </ul>

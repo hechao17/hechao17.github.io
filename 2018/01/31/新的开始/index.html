@@ -7,18 +7,18 @@
   
   <title>新的开始 | Hechao&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这是新的开始，我用hexo创建了第一篇文章。 通过下面的命令，可以创建一篇新的文章。 在git bash中 hexo new 新的开始 然后启动hexo本地服务器。 hexo server 通过浏览器打开， http://localhost:4000/, 就会出现我们新写的文章。 hexo deploy 发布到github中会报错 ERROR Deployer not found: git 需要使">
-<meta name="keywords" content="开始,我,日记">
+  <meta name="description" content="这是新的开始，我用hexo创建了第一篇文章。  当然是需要在电脑上安装好hexo的环境，包括：  安装git node.js hexo  这些随笔在网上找找就完成了。  然后在你需要的目录下，使用git bash窗口。通过下面的命令，可以创建一篇新的文章。 在git bash中 hexo new 新的开始 然后启动hexo本地服务器。 hexo server 通过浏览器打开， http://loc">
+<meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="新的开始">
 <meta property="og:url" content="http://hechao17.github.io/2018/01/31/新的开始/index.html">
 <meta property="og:site_name" content="Hechao&#39;s Blog">
-<meta property="og:description" content="这是新的开始，我用hexo创建了第一篇文章。 通过下面的命令，可以创建一篇新的文章。 在git bash中 hexo new 新的开始 然后启动hexo本地服务器。 hexo server 通过浏览器打开， http://localhost:4000/, 就会出现我们新写的文章。 hexo deploy 发布到github中会报错 ERROR Deployer not found: git 需要使">
+<meta property="og:description" content="这是新的开始，我用hexo创建了第一篇文章。  当然是需要在电脑上安装好hexo的环境，包括：  安装git node.js hexo  这些随笔在网上找找就完成了。  然后在你需要的目录下，使用git bash窗口。通过下面的命令，可以创建一篇新的文章。 在git bash中 hexo new 新的开始 然后启动hexo本地服务器。 hexo server 通过浏览器打开， http://loc">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-01-31T07:09:06.889Z">
+<meta property="og:updated_time" content="2018-01-31T08:14:36.505Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="新的开始">
-<meta name="twitter:description" content="这是新的开始，我用hexo创建了第一篇文章。 通过下面的命令，可以创建一篇新的文章。 在git bash中 hexo new 新的开始 然后启动hexo本地服务器。 hexo server 通过浏览器打开， http://localhost:4000/, 就会出现我们新写的文章。 hexo deploy 发布到github中会报错 ERROR Deployer not found: git 需要使">
+<meta name="twitter:description" content="这是新的开始，我用hexo创建了第一篇文章。  当然是需要在电脑上安装好hexo的环境，包括：  安装git node.js hexo  这些随笔在网上找找就完成了。  然后在你需要的目录下，使用git bash窗口。通过下面的命令，可以创建一篇新的文章。 在git bash中 hexo new 新的开始 然后启动hexo本地服务器。 hexo server 通过浏览器打开， http://loc">
   
     <link rel="alternate" href="/atom.xml" title="Hechao&#39;s Blog" type="application/atom+xml">
   
@@ -92,39 +92,41 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>这是<strong>新的开始</strong>，我用hexo创建了第一篇文章。</p>
-<p>通过下面的命令，可以创建一篇新的文章。</p>
+<blockquote>
+<p>当然是需要在电脑上安装好hexo的环境，包括：</p>
+<ol>
+<li>安装git</li>
+<li>node.js</li>
+<li>hexo</li>
+</ol>
+<p>这些随笔在网上找找就完成了。</p>
+</blockquote>
+<p>然后在你需要的目录下，使用git bash窗口。通过下面的命令，可以创建一篇新的文章。</p>
 <pre><code>在git bash中
 hexo new 新的开始
 </code></pre><p>然后启动hexo本地服务器。</p>
 <pre><code>hexo server
 </code></pre><p>通过浏览器打开， <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>, 就会出现我们新写的文章。</p>
-<pre><code>hexo deploy 发布到github中会报错
-ERROR Deployer not found: git
-需要使用下面这条指令
-npm install --save hexo-deployer-git
-</code></pre>
+<h2 id="然后是部署到git-hub"><a href="#然后是部署到git-hub" class="headerlink" title="然后是部署到git hub"></a>然后是部署到git hub</h2><p>部署完成后，我们就可以通过网站来访问你的博客了，其中username是你的github的用户名 </p>
+<pre><code>https://username.github.io/
+</code></pre><p>我们需要在 <code>github</code> 中先创建一个仓库，命名叫做 <code>username.github.io</code> 否则后续操作会比较省心！！</p>
+<p>部署的时候，我们在git bash中使用指令</p>
+<pre><code>git g    #generate 就是生成所需要的网站
+git d    #deploy 上传到github的服务器中
+</code></pre><p>完成后就可以通过 网页访问你的博客啦~~~~</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://hechao17.github.io/2018/01/31/新的开始/" data-id="cjd2rzl2n0001foqxp6vdx0hg" class="article-share-link">Share</a>
+      <a data-url="http://hechao17.github.io/2018/01/31/新的开始/" data-id="cjd2sr3jo00003oqx4arzl7y8" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/开始/">开始</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/我/">我</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日记/">日记</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
 
     </footer>
   </div>
   
     
-<nav id="article-nav">
-  
-  
-    <a href="/2018/01/31/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
-  
-</nav>
-
   
 </article>
 
@@ -146,7 +148,7 @@ npm install --save hexo-deployer-git
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/开始/">开始</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/我/">我</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日记/">日记</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
     </div>
   </div>
 
@@ -156,7 +158,7 @@ npm install --save hexo-deployer-git
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/开始/" style="font-size: 10px;">开始</a> <a href="/tags/我/" style="font-size: 10px;">我</a> <a href="/tags/日记/" style="font-size: 10px;">日记</a>
+      <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
     </div>
   </div>
 
@@ -179,10 +181,6 @@ npm install --save hexo-deployer-git
         
           <li>
             <a href="/2018/01/31/新的开始/">新的开始</a>
-          </li>
-        
-          <li>
-            <a href="/2018/01/31/hello-world/">Hello World</a>
           </li>
         
       </ul>
