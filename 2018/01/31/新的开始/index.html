@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Hechao&#39;s Blog">
 <meta property="og:description" content="这是新的开始，我用hexo创建了第一篇文章，并在Gigt Page上部署。 环境的搭建当然是需要在电脑上安装好hexo的环境，包括：      安装git node.js hexo  这些安装的方法随便在网上就能找到，就不详细叙述了。 创建本地bolg在需要创建blog的文件夹中，启动git bash窗口。然后输入指令  hexo init 或者 hexo init (folder)  其中带 (">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-01T04:00:57.468Z">
+<meta property="og:updated_time" content="2018-02-06T12:47:03.629Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="新的开始">
 <meta name="twitter:description" content="这是新的开始，我用hexo创建了第一篇文章，并在Gigt Page上部署。 环境的搭建当然是需要在电脑上安装好hexo的环境，包括：      安装git node.js hexo  这些安装的方法随便在网上就能找到，就不详细叙述了。 创建本地bolg在需要创建blog的文件夹中，启动git bash窗口。然后输入指令  hexo init 或者 hexo init (folder)  其中带 (">
@@ -285,8 +285,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/日志/" itemprop="url" rel="index">
-                    <span itemprop="name">日志</span>
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
                   </a>
                 </span>
 
@@ -336,14 +336,12 @@
 </blockquote>
 <p>其中带 <code>(folder)</code> 是在你的指定的目录下在创建一个 <code>folder</code> 的目录。创建完成后，会自动成才一系列的默认的文件夹和文件。</p>
 <p>然后就是编译，形成可以显示的网页文件，我们通过命令 <code>hexo generate</code> 或者 <code>hexo g</code> 来完成</p>
-<p><code>hexo server</code> 或者 <code>hexo s</code> 来启动本地服务器。</p>
-<p>打开浏览器 <code>http://localhost:4000/</code> 就可以观察到自己的bolg效果了。</p>
-<h2 id="添加Blog内容"><a href="#添加Blog内容" class="headerlink" title="添加Blog内容"></a>添加Blog内容</h2><p>比如我要添加一篇新的博客，名字叫做<strong>新的开始</strong>，还是在git bash窗口中，通过指令 <code>hexo new 新的开始</code> </p>
-<p>那么会在文件目录下的 <code>source\_posts</code> 下创建一个 <strong>新的开始.md</strong> 文件。我们编辑这个md文件就可以编辑Blog了。 </p>
+<p>编译完成后，如果需要本地查看效果，可以通过指令 <code>hexo server</code> 或者 <code>hexo s</code> 来启动本地服务器。打开浏览器 <code>http://localhost:4000/</code> 就可以观察到自己的bolg效果了。</p>
+<h2 id="添加Blog内容"><a href="#添加Blog内容" class="headerlink" title="添加Blog内容"></a>添加Blog内容</h2><p>比如我要添加一篇新的博客，名字叫做<strong>新的开始</strong>，还是在git bash窗口中，通过指令 <code>hexo new 新的开始</code> ，那么会在文件目录下的 <code>source\_posts</code> 下创建一个 <strong>新的开始.md</strong> 文件。我们编辑这个md文件就可以编辑Blog了。 </p>
 <p>md文件是<code>markdown</code>格式的文件。目前有多种编辑器支持<code>markdown</code>的编辑，比如 <strong>MarkdownPad 2</strong></p>
-<p>完成后，也可以启动本地服务器，方便检查编辑后的效果。</p>
+<p>完成后，记得启动本地服务器，检查一下编辑后的效果。</p>
 <h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><p>这里要求先熟悉 <code>git</code> 的操作。我们需要在 <code>github</code> 中先创建一个仓库，命名叫做 <code>username.github.io</code>，这样后续的操作会比较省心！！</p>
-<p>上传到 <code>github</code> 的指令是 <code>hexo deploy</code>或者<code>hexo d</code>。上传之前，最后通过 <code>hexo g</code> 先编译产生html文件。</p>
+<p>上传之前， 先通过 <code>hexo g</code> 先编译产生html文件。上传到 <code>github</code> 的指令是 <code>hexo deploy</code>或者<code>hexo d</code>。</p>
 <p>完成上传后，我们就可以通过网站访问博客了~~~，<code>https://username.github.io/</code>。</p>
 <h2 id="更换模版"><a href="#更换模版" class="headerlink" title="更换模版"></a>更换模版</h2><p>hexo默认的是 <code>landscape</code> 模版。 太小白低端了，我们需要换一个更时尚的界面~~</p>
 <p>据说hexo的Next模版不错，就去 <a href="https://github.com/iissnan/hexo-theme-next/releases" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next/releases</a> 网站上去下载最新的Next模版；压缩文件解压到本地目录 <code>themes</code> 中，文件名修改为 <code>next</code>。</p>
@@ -375,6 +373,22 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/02/06/Linux-Coding-Style/" rel="prev" title="Linux-Coding-Style">
+                Linux-Coding-Style <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -452,7 +466,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
