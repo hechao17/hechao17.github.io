@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Linux/C," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="重温 Linux Kernel CodingStyle##缩进  文档推荐的是缩进是8个字符，理由就是8个宽度容易重视函数嵌套太深的问题，如果超过3级缩进，则可能有代码问题了。 但是实际使用的时候还是觉得使用4个字符比较合适。 switch 语句中消除缩进的方式可以这样： switch  (suffix) { case &amp;apos;g&amp;apos;: case &amp;apos;G&amp;apos;:">
+<meta name="description" content="缩进 文档推荐的是缩进是8个字符，理由就是8个宽度容易重视函数嵌套太深的问题，如果超过3级缩进，则可能有代码问题了。 但是实际使用的时候还是觉得使用4个字符比较合适。 switch 语句中消除缩进的方式可以这样： switch  (suffix) { case &amp;apos;g&amp;apos;: case &amp;apos;G&amp;apos;:     mem &amp;lt;&amp;lt;= 30;     break;">
+<meta name="keywords" content="Linux&#x2F;C">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux-Coding-Style">
 <meta property="og:url" content="http://hechao17.github.io/2018/02/06/Linux-Coding-Style/index.html">
 <meta property="og:site_name" content="Hechao&#39;s Blog">
-<meta property="og:description" content="重温 Linux Kernel CodingStyle##缩进  文档推荐的是缩进是8个字符，理由就是8个宽度容易重视函数嵌套太深的问题，如果超过3级缩进，则可能有代码问题了。 但是实际使用的时候还是觉得使用4个字符比较合适。 switch 语句中消除缩进的方式可以这样： switch  (suffix) { case &amp;apos;g&amp;apos;: case &amp;apos;G&amp;apos;:">
+<meta property="og:description" content="缩进 文档推荐的是缩进是8个字符，理由就是8个宽度容易重视函数嵌套太深的问题，如果超过3级缩进，则可能有代码问题了。 但是实际使用的时候还是觉得使用4个字符比较合适。 switch 语句中消除缩进的方式可以这样： switch  (suffix) { case &amp;apos;g&amp;apos;: case &amp;apos;G&amp;apos;:     mem &amp;lt;&amp;lt;= 30;     break;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-06T12:56:24.485Z">
+<meta property="og:updated_time" content="2018-02-06T13:09:36.782Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux-Coding-Style">
-<meta name="twitter:description" content="重温 Linux Kernel CodingStyle##缩进  文档推荐的是缩进是8个字符，理由就是8个宽度容易重视函数嵌套太深的问题，如果超过3级缩进，则可能有代码问题了。 但是实际使用的时候还是觉得使用4个字符比较合适。 switch 语句中消除缩进的方式可以这样： switch  (suffix) { case &amp;apos;g&amp;apos;: case &amp;apos;G&amp;apos;:">
+<meta name="twitter:description" content="缩进 文档推荐的是缩进是8个字符，理由就是8个宽度容易重视函数嵌套太深的问题，如果超过3级缩进，则可能有代码问题了。 但是实际使用的时候还是觉得使用4个字符比较合适。 switch 语句中消除缩进的方式可以这样： switch  (suffix) { case &amp;apos;g&amp;apos;: case &amp;apos;G&amp;apos;:     mem &amp;lt;&amp;lt;= 30;     break;">
 
 
 
@@ -272,6 +273,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学海无涯/" itemprop="url" rel="index">
+                    <span itemprop="name">学海无涯</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -299,8 +322,7 @@
       
 
       
-        <h1 id="重温-Linux-Kernel-CodingStyle"><a href="#重温-Linux-Kernel-CodingStyle" class="headerlink" title="重温 Linux Kernel CodingStyle"></a>重温 <code>Linux Kernel CodingStyle</code></h1><p>##缩进</p>
-<ul>
+        <h2 id="缩进"><a href="#缩进" class="headerlink" title="缩进"></a>缩进</h2><ul>
 <li><p>文档推荐的是缩进是8个字符，理由就是8个宽度容易重视函数嵌套太深的问题，如果超过3级缩进，则可能有代码问题了。 但是实际使用的时候还是觉得使用4个字符比较合适。</p>
 <pre><code>switch 语句中消除缩进的方式可以这样：
 switch  (suffix) {
@@ -312,31 +334,31 @@ default:
     break;    
 }
 </code></pre></li>
-<li><p>不要把多个语句放在一行里，除非你有什么东西要隐藏，也不要在一行里放多个赋值语句。</p>
+<li><p>不要把多个语句放在一行里，除非你有什么东西要隐藏，也不要在一行里放多个赋值语句</p>
 </li>
 <li>除了注释、文档和Kconfig之外，不要使用空格来缩进</li>
-<li>不要在行尾留空格，空白。</li>
+<li>不要在行尾留空格，空白</li>
 </ul>
 <h2 id="保持一行的长度"><a href="#保持一行的长度" class="headerlink" title="保持一行的长度"></a>保持一行的长度</h2><ul>
 <li>每一行的长度的限制是80列</li>
-<li>保持较长的显示，除非是可以大幅度的提高可读性，并且不会隐藏信息。</li>
+<li>保持较长的显示，除非是可以大幅度的提高可读性，并且不会隐藏信息</li>
 </ul>
 <h2 id="大括号和空格"><a href="#大括号和空格" class="headerlink" title="大括号和空格"></a>大括号和空格</h2><ul>
 <li><p>大括号的放置，起始括号在行末，结束括号在行首。这适用所有的非函数语句块 <code>(if、 switch、 for、 while、 do)</code></p>
 <pre><code>if （x is true） {
     we do y
 }
-</code></pre><p>不过例外的函数括号，一般放置在下一行的开头。大家可能会抱怨这个不一致性。但是函数确实是特殊的。</p>
+</code></pre><p>不过例外的函数括号，一般放置在下一行的开头。大家可能会抱怨这个不一致性。但是函数确实是特殊的</p>
 <pre><code>int function(int x)
 {
     body of function
 }
-</code></pre><p>  ###</p>
-<pre><code>do {
+
+do {
     body of do-loop
 } while (condition);
 </code></pre></li>
-<li><p>空格的使用，取决于是函数还是关键字。 （大多数）关键字后要加一个空格，例外的是 <code>sizeof, typeof, alignof, __attribute__</code> 因为他们看起来更像函数。列如</p>
+<li><p>空格的使用，取决于是函数还是关键字。 （大多数）关键字后要加一个空格，例外的是 <code>sizeof, typeof, alignof, __attribute__</code> 因为他们看起来更像函数。列如：</p>
 <pre><code>s = sizeof(struct file);
 </code></pre><p>所以在这些关键字后面放一个空格：<code>if, switch, case, for, do, while</code>。但不要在小括号里的表达式两侧加空格，比如这个反列: <code>s = sizeof( struct file );</code></p>
 <p>  <code>“*”</code> 的使用，当声明指针类型或者返回指针类型的函数时，<code>“*”</code> 是使之靠近变量名或者函数名，而不是靠近类型名。比如:</p>
@@ -376,13 +398,13 @@ char *match_strdup(substring_t *s);
 <h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><ul>
 <li>函数应该简短漂亮，只完成一件事。</li>
 <li><p>一个函数的最大长度，应该和该函数的复杂度，缩进级数成反比。（理论上很简单的只有一个很长的case语句，而且需要在case里做很多小的事情，这个函数尽管很长，但也是可以的）</p>
-<p>  如果一个复制的函数，甚至难以理解函数的目的，应该使用辅助函数，并取一个可以描述的名字（如果性能很重要，可以让编译器内联他们，这样的效果往往会比你写一个复杂的效果要好。）？？？</p>
+<p>  如果一个复制的函数，甚至难以理解函数的目的，应该使用辅助函数，并取一个可以描述的名字（如果性能很重要，可以让编译器内联他们，这样的效果往往会比你写一个复杂的效果要好。）</p>
 </li>
 <li><p>函数本地变量的数量，不能超过5-10个，否则需要拆分成更小的函数</p>
 </li>
 <li>人的大脑一般可以轻松的同时跟踪7个不同的事物，更多就会变得糊涂；在聪明的人也可能会记不清2个星期前做过的事情。</li>
 <li>在源文件里，使用空行隔开不同的函数。</li>
-<li>函数需要被导出，它的EXPORT*宏应该紧贴在它的结束大括号之下。 ？？？</li>
+<li>函数需要被导出，它的EXPORT*宏应该紧贴在它的结束大括号之下。</li>
 </ul>
 <h2 id="goto的使用"><a href="#goto的使用" class="headerlink" title="goto的使用"></a>goto的使用</h2><ul>
 <li>必要的时候使用 <code>goto</code> 有好处    理由是：<ul>
@@ -463,6 +485,12 @@ min()和 max()宏
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Linux-C/" rel="tag"># Linux/C</a>
+          
+        </div>
       
 
       
@@ -573,7 +601,7 @@ min()和 max()宏
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 
               </div>
@@ -584,7 +612,7 @@ min()和 max()宏
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
@@ -633,7 +661,7 @@ min()和 max()宏
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#重温-Linux-Kernel-CodingStyle"><span class="nav-number">1.</span> <span class="nav-text">重温 Linux Kernel CodingStyle</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#保持一行的长度"><span class="nav-number">1.1.</span> <span class="nav-text">保持一行的长度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大括号和空格"><span class="nav-number">1.2.</span> <span class="nav-text">大括号和空格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命名"><span class="nav-number">1.3.</span> <span class="nav-text">命名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Typedef"><span class="nav-number">1.4.</span> <span class="nav-text">Typedef</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数"><span class="nav-number">1.5.</span> <span class="nav-text">函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#goto的使用"><span class="nav-number">1.6.</span> <span class="nav-text">goto的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注释"><span class="nav-number">1.7.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据结构的计数器"><span class="nav-number">1.8.</span> <span class="nav-text">数据结构的计数器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#宏，枚举和RTL"><span class="nav-number">1.9.</span> <span class="nav-text">宏，枚举和RTL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内联函数"><span class="nav-number">1.10.</span> <span class="nav-text">内联函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数返回值和命令"><span class="nav-number">1.11.</span> <span class="nav-text">函数返回值和命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不要重复定义宏"><span class="nav-number">1.12.</span> <span class="nav-text">不要重复定义宏</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#缩进"><span class="nav-number">1.</span> <span class="nav-text">缩进</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#保持一行的长度"><span class="nav-number">2.</span> <span class="nav-text">保持一行的长度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大括号和空格"><span class="nav-number">3.</span> <span class="nav-text">大括号和空格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#命名"><span class="nav-number">4.</span> <span class="nav-text">命名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Typedef"><span class="nav-number">5.</span> <span class="nav-text">Typedef</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数"><span class="nav-number">6.</span> <span class="nav-text">函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#goto的使用"><span class="nav-number">7.</span> <span class="nav-text">goto的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注释"><span class="nav-number">8.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据结构的计数器"><span class="nav-number">9.</span> <span class="nav-text">数据结构的计数器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#宏，枚举和RTL"><span class="nav-number">10.</span> <span class="nav-text">宏，枚举和RTL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内联函数"><span class="nav-number">11.</span> <span class="nav-text">内联函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数返回值和命令"><span class="nav-number">12.</span> <span class="nav-text">函数返回值和命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不要重复定义宏"><span class="nav-number">13.</span> <span class="nav-text">不要重复定义宏</span></a></li></ol></div>
             
 
           </div>
