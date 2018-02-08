@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="hechao17.coding.me">
-  <title>hechao&#39;s Blog</title>
+  <title>Blog更新为Yilia模版 | hechao&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="心里有阳光，哪里都是晴天。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="hechao&#39;s Blog">
-<meta property="og:url" content="hechao17.coding.me/index.html">
+  <meta name="description" content="纯粹是为了折腾，也或许是喜新厌旧了吧，之前的 Next 模版感觉有些缺点，特别是对 Code 的排版不是很友好，所以索性就赶在过年之前换了一身衣服，权当是换个新装，过新年。这次的主角是 hexo 的 Yilia主题，特点是简约优雅，以及极致的性能。">
+<meta name="keywords" content="hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Blog更新为Yilia模版">
+<meta property="og:url" content="hechao17.coding.me/2018/02/08/Blog更新为Yilia模版/index.html">
 <meta property="og:site_name" content="hechao&#39;s Blog">
-<meta property="og:description" content="心里有阳光，哪里都是晴天。">
+<meta property="og:description" content="纯粹是为了折腾，也或许是喜新厌旧了吧，之前的 Next 模版感觉有些缺点，特别是对 Code 的排版不是很友好，所以索性就赶在过年之前换了一身衣服，权当是换个新装，过新年。这次的主角是 hexo 的 Yilia主题，特点是简约优雅，以及极致的性能。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-08T10:25:07.787Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hechao&#39;s Blog">
-<meta name="twitter:description" content="心里有阳光，哪里都是晴天。">
+<meta name="twitter:title" content="Blog更新为Yilia模版">
+<meta name="twitter:description" content="纯粹是为了折腾，也或许是喜新厌旧了吧，之前的 Next 模版感觉有些缺点，特别是对 Code 的排版不是很友好，所以索性就赶在过年之前换了一身衣服，权当是换个新装，过新年。这次的主角是 hexo 的 Yilia主题，特点是简约优雅，以及极致的性能。">
   
     <link rel="alternative" href="/atom.xml" title="hechao&#39;s Blog" type="application/atom+xml">
   
@@ -149,16 +151,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-Blog更新为Yilia模版" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Blog更新为Yilia模版" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/08/Blog更新为Yilia模版/">Blog更新为Yilia模版</a>
+    <h1 class="article-title" itemprop="name">
+      Blog更新为Yilia模版
     </h1>
   
 
@@ -172,7 +172,18 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>纯粹是为了折腾，也或许是喜新厌旧了吧，之前的 <code>Next</code> 模版感觉有些缺点，特别是对 <code>Code</code> 的排版不是很友好，所以索性就赶在过年之前换了一身衣服，权当是换个新装，过新年。这次的主角是 <code>hexo</code> 的 <code>Yilia</code>主题，特点是简约优雅，以及极致的性能。</p>
-        
+<a id="more"></a>
+<p>先到 <code>Github</code> 下载最新的 <code>Yilia</code> 模版，在 <code>Blog</code> 目录下启动 <code>Gig Bash</code></p>
+<pre><code>git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia
+</code></pre><p>下载完成后，将 <code>Blog</code> 目录下的配置文件 <code>_config.yml</code> 中的模版修改为 <code>yilia</code></p>
+<pre><code>theme: yilia
+</code></pre><p><code>Yilia</code> 主题的一些配置信息，参照原作的说明把，<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">原作者</a> 已经说的非常仔细了！！ 就有一个地方我没看到是在哪里设置。</p>
+<ul>
+<li>文章卡片右下角常驻链接，不需要请设置为false</li>
+</ul>
+<p>所以我直接到路径中，<code>themes\yilia\layout\_partial\post\share.ejs</code> 将这个图标的文件删去了。 </p>
+<p><code>PS: Blog</code> 首页中展示的文章，如果太长，可以通过 <code>&lt;!-- more--&gt;</code> 来隐藏。另外,<code>hexo new</code> 指令创建新的文章的时候，标题不支持空格，否则空格前面的名字会丢失，别问我怎么知道的~_~。</p>
+
       
 
       
@@ -194,16 +205,26 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/02/08/Blog更新为Yilia模版/">展开全文 >></a>
-        </p>
-      
 
+      
+        
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2018/02/08/Blog从Github迁移到Coding/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Blog从Github迁移到coding</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -223,238 +244,14 @@
 
 
 
-
   
-    <article id="post-Blog从Github迁移到Coding" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/08/Blog从Github迁移到Coding/">Blog从Github迁移到coding</a>
-    </h1>
   
 
-        
-        <a href="/2018/02/08/Blog从Github迁移到Coding/" class="archive-article-date">
-  	<time datetime="2018-02-08T01:36:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><code>Coding</code> 是中国的 <code>Github</code>，虽然 <a href="http://coding.net" target="_blank" rel="noopener">Coding官方</a> 不这么认为，他们的目标是更加<strong>远大</strong>的！ 而我，只是在尝试不同的东西，这次将 <code>Blog</code> 的内容从 <code>Github</code> 迁移到 <code>Coding</code>。大家不要在意一些细节，比如 <code>Bolg</code> 的数量和质量，我真的只是想折腾一下，尝试不同的东西，以满足我的好奇心.</p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/02/08/Blog从Github迁移到Coding/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Linux-Coding-Style" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/06/Linux-Coding-Style/">Linux-Coding-Style</a>
-    </h1>
   
 
-        
-        <a href="/2018/02/06/Linux-Coding-Style/" class="archive-article-date">
-  	<time datetime="2018-02-06T12:52:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>重温能知新，重新学习下Linux kernel coding style </p>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Linux/C</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/02/06/Linux-Coding-Style/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-你好，世界" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/31/你好，世界/">你好，世界</a>
-    </h1>
   
 
-        
-        <a href="/2018/01/31/你好，世界/" class="archive-article-date">
-  	<time datetime="2018-01-31T06:36:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>做为一个电子工程师，这对我来说是一个新的开始，不次于 <code>Hello World！</code> ；我用hexo创建了第一篇文章，并部署在GitPages上。</p>
-<h3 id="环境的搭建"><a href="#环境的搭建" class="headerlink" title="环境的搭建"></a>环境的搭建</h3><p>当然是需要在电脑上安装好hexo的环境，包括：    </p>
-<blockquote>
-<ol>
-<li>安装git</li>
-<li>node.js</li>
-<li>hexo</li>
-</ol>
-</blockquote>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/31/你好，世界/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -477,8 +274,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
