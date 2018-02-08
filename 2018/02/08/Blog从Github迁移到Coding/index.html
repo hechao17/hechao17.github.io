@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="这是新的开始，我用hexo创建了第一篇文章，并在Gigt Page上部署。 环境的搭建当然是需要在电脑上安装好hexo的环境，包括：      安装git node.js hexo  这些安装的方法随便在网上就能找到，就不详细叙述了。 创建本地bolg在需要创建blog的文件夹中，启动git bash窗口。然后输入指令  hexo init 或者 hexo init (folder)  其中带 (">
+<meta name="description" content="bolg从github迁移到coding配置共钥以前配置过 github 的共钥，可以直接部署到 Coding 上。具体步骤就是将本地 C:\Users\Administrator\.ssh 目录下的 id_rsa.pub 的密钥写入到 Codding/我的账户/SSH共钥中，在 git bash 可以测试是否添加成功： ssh -T git@git.coding.net --如果成功会返回下面的">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="新的开始">
-<meta property="og:url" content="hechao17.coding.me/2018/01/31/新的开始/index.html">
+<meta property="og:title" content="Blog从Github迁移到coding">
+<meta property="og:url" content="hechao17.coding.me/2018/02/08/Blog从Github迁移到Coding/index.html">
 <meta property="og:site_name" content="Hechao&#39;s Blog">
-<meta property="og:description" content="这是新的开始，我用hexo创建了第一篇文章，并在Gigt Page上部署。 环境的搭建当然是需要在电脑上安装好hexo的环境，包括：      安装git node.js hexo  这些安装的方法随便在网上就能找到，就不详细叙述了。 创建本地bolg在需要创建blog的文件夹中，启动git bash窗口。然后输入指令  hexo init 或者 hexo init (folder)  其中带 (">
+<meta property="og:description" content="bolg从github迁移到coding配置共钥以前配置过 github 的共钥，可以直接部署到 Coding 上。具体步骤就是将本地 C:\Users\Administrator\.ssh 目录下的 id_rsa.pub 的密钥写入到 Codding/我的账户/SSH共钥中，在 git bash 可以测试是否添加成功： ssh -T git@git.coding.net --如果成功会返回下面的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-06T13:02:56.272Z">
+<meta property="og:updated_time" content="2018-02-08T01:42:19.293Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="新的开始">
-<meta name="twitter:description" content="这是新的开始，我用hexo创建了第一篇文章，并在Gigt Page上部署。 环境的搭建当然是需要在电脑上安装好hexo的环境，包括：      安装git node.js hexo  这些安装的方法随便在网上就能找到，就不详细叙述了。 创建本地bolg在需要创建blog的文件夹中，启动git bash窗口。然后输入指令  hexo init 或者 hexo init (folder)  其中带 (">
+<meta name="twitter:title" content="Blog从Github迁移到coding">
+<meta name="twitter:description" content="bolg从github迁移到coding配置共钥以前配置过 github 的共钥，可以直接部署到 Coding 上。具体步骤就是将本地 C:\Users\Administrator\.ssh 目录下的 id_rsa.pub 的密钥写入到 Codding/我的账户/SSH共钥中，在 git bash 可以测试是否添加成功： ssh -T git@git.coding.net --如果成功会返回下面的">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="hechao17.coding.me/2018/01/31/新的开始/"/>
+  <link rel="canonical" href="hechao17.coding.me/2018/02/08/Blog从Github迁移到Coding/"/>
 
 
 
 
 
-  <title>新的开始 | Hechao's Blog</title>
+  <title>Blog从Github迁移到coding | Hechao's Blog</title>
   
 
 
@@ -233,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="hechao17.coding.me/2018/01/31/新的开始/">
+    <link itemprop="mainEntityOfPage" href="hechao17.coding.me/2018/02/08/Blog从Github迁移到Coding/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Hechao">
@@ -250,7 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">新的开始</h1>
+          <h1 class="post-title" itemprop="name headline">Blog从Github迁移到coding</h1>
         
 
         <div class="post-meta">
@@ -262,8 +262,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-31T14:36:44+08:00">
-                2018-01-31
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-08T09:36:32+08:00">
+                2018-02-08
               </time>
             
 
@@ -322,32 +322,27 @@
       
 
       
-        <p>这是<strong>新的开始</strong>，我用hexo创建了第一篇文章，并在Gigt Page上部署。</p>
-<h2 id="环境的搭建"><a href="#环境的搭建" class="headerlink" title="环境的搭建"></a>环境的搭建</h2><p>当然是需要在电脑上安装好hexo的环境，包括：    </p>
-<ol>
-<li>安装git</li>
-<li>node.js</li>
-<li>hexo</li>
-</ol>
-<p>这些安装的方法随便在网上就能找到，就不详细叙述了。</p>
-<h2 id="创建本地bolg"><a href="#创建本地bolg" class="headerlink" title="创建本地bolg"></a>创建本地bolg</h2><p>在需要创建blog的文件夹中，启动git bash窗口。然后输入指令</p>
-<blockquote>
-<p>hexo init 或者 hexo init (folder)</p>
-</blockquote>
-<p>其中带 <code>(folder)</code> 是在你的指定的目录下在创建一个 <code>folder</code> 的目录。创建完成后，会自动成才一系列的默认的文件夹和文件。</p>
-<p>然后就是编译，形成可以显示的网页文件，我们通过命令 <code>hexo generate</code> 或者 <code>hexo g</code> 来完成</p>
-<p>编译完成后，如果需要本地查看效果，可以通过指令 <code>hexo server</code> 或者 <code>hexo s</code> 来启动本地服务器。打开浏览器 <code>http://localhost:4000/</code> 就可以观察到自己的bolg效果了。</p>
-<h2 id="添加Blog内容"><a href="#添加Blog内容" class="headerlink" title="添加Blog内容"></a>添加Blog内容</h2><p>比如我要添加一篇新的博客，名字叫做<strong>新的开始</strong>，还是在git bash窗口中，通过指令 <code>hexo new 新的开始</code> ，那么会在文件目录下的 <code>source\_posts</code> 下创建一个 <strong>新的开始.md</strong> 文件。我们编辑这个md文件就可以编辑Blog了。 </p>
-<p>md文件是<code>markdown</code>格式的文件。目前有多种编辑器支持<code>markdown</code>的编辑，比如 <strong>MarkdownPad 2</strong></p>
-<p>完成后，记得启动本地服务器，检查一下编辑后的效果。</p>
-<h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><p>这里要求先熟悉 <code>git</code> 的操作。我们需要在 <code>github</code> 中先创建一个仓库，命名叫做 <code>username.github.io</code>，这样后续的操作会比较省心！！</p>
-<p>上传之前， 先通过 <code>hexo g</code> 先编译产生html文件。上传到 <code>github</code> 的指令是 <code>hexo deploy</code>或者<code>hexo d</code>。</p>
-<p>完成上传后，我们就可以通过网站访问博客了~~~，<code>https://username.github.io/</code>。</p>
-<h2 id="更换模版"><a href="#更换模版" class="headerlink" title="更换模版"></a>更换模版</h2><p>hexo默认的是 <code>landscape</code> 模版。 太小白低端了，我们需要换一个更时尚的界面~~</p>
-<p>据说hexo的Next模版不错，就去 <a href="https://github.com/iissnan/hexo-theme-next/releases" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next/releases</a> 网站上去下载最新的Next模版；压缩文件解压到本地目录 <code>themes</code> 中，文件名修改为 <code>next</code>。</p>
-<p>然后修改模版的配置文件， <code>themes\next\_config.yml</code>。 修改语言啦~， 图标啦~…细节大家从Next的官方文档中找寻把。</p>
-<p>完成后，编译，重新部署到github中。 </p>
+        <h2 id="bolg从github迁移到coding"><a href="#bolg从github迁移到coding" class="headerlink" title="bolg从github迁移到coding"></a>bolg从github迁移到coding</h2><h3 id="配置共钥"><a href="#配置共钥" class="headerlink" title="配置共钥"></a>配置共钥</h3><p>以前配置过 <code>github</code> 的共钥，可以直接部署到 <code>Coding</code> 上。具体步骤就是将本地 <code>C:\Users\Administrator\.ssh</code> 目录下的 <code>id_rsa.pub</code> 的密钥写入到 <code>Codding/我的账户/SSH共钥</code>中，在 <code>git bash</code> 可以测试是否添加成功：</p>
+<pre><code>ssh -T git@git.coding.net --如果成功会返回下面的提示：
 
+Coding 提示: Hello username, You&apos;ve connected to Coding.net via SSH. This is a personal key.
+username，你好，你已经通过 SSH 协议认证 Coding.net 服务，这是一个个人公钥
+</code></pre><h3 id="创建Coding-Pages"><a href="#创建Coding-Pages" class="headerlink" title="创建Coding Pages"></a>创建Coding Pages</h3><p><code>coding pages</code> 支持用户 <code>pages</code> 和 项目 <code>pages</code>，其中创建用户 <code>pages</code> 可以通过 <code>{user_name}.coding.me</code> 来访问； 创建项目 <code>pages</code>，则通过 <code>{user_name}.coding.me/{project_name}</code> 来访问，其中的 <code>{user_name}</code> 是你的 <code>Coding</code> 帐号名。</p>
+<p>理解了coding pages的创建过程，就可以选择自己选择的创建类型，我们先创建一个 <code>coding</code> 项目，如果是创建用户 <code>pages</code>，项目名称就需要固定为 <code>{user_name}.coding.me</code>，创建后，修改本地 <code>hexo</code> 博客目录下的配置文件 <code>_config.yml</code> 中的两个配置，如下：</p>
+<pre><code>deploy:
+  type: git
+  repo: git@git.coding.net:{user_name}/{user_name}.coding.me.git
+
+url: {user_name}.coding.me
+root: /
+</code></pre><p>设置完毕后，可以通过 <code>git bash</code> 的 <code>hexo d</code> 指令部署到 <code>coding pages</code>，然后就可以访问博客了。</p>
+<h3 id="Github和Coding共同部署"><a href="#Github和Coding共同部署" class="headerlink" title="Github和Coding共同部署"></a>Github和Coding共同部署</h3><p>将 <code>repo</code> 同时加入两个对应仓库地址即可。</p>
+<pre><code>deploy:
+  type: git
+  repo: 
+    coding: git@git.coding.net:{user_name}/{user_name}.coding.me.git
+    github: git@github.com:{user_name}/{user_name}.github.io.git
+</code></pre>
       
     </div>
     
@@ -377,15 +372,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/02/06/Linux-Coding-Style/" rel="next" title="Linux-Coding-Style">
+                <i class="fa fa-chevron-left"></i> Linux-Coding-Style
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/02/06/Linux-Coding-Style/" rel="prev" title="Linux-Coding-Style">
-                Linux-Coding-Style <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -537,7 +532,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#环境的搭建"><span class="nav-number">1.</span> <span class="nav-text">环境的搭建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建本地bolg"><span class="nav-number">2.</span> <span class="nav-text">创建本地bolg</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加Blog内容"><span class="nav-number">3.</span> <span class="nav-text">添加Blog内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署到github"><span class="nav-number">4.</span> <span class="nav-text">部署到github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更换模版"><span class="nav-number">5.</span> <span class="nav-text">更换模版</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#bolg从github迁移到coding"><span class="nav-number">1.</span> <span class="nav-text">bolg从github迁移到coding</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置共钥"><span class="nav-number">1.1.</span> <span class="nav-text">配置共钥</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建Coding-Pages"><span class="nav-number">1.2.</span> <span class="nav-text">创建Coding Pages</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Github和Coding共同部署"><span class="nav-number">1.3.</span> <span class="nav-text">Github和Coding共同部署</span></a></li></ol></li></ol></div>
             
 
           </div>
